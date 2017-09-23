@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mojapierwsza</string>
+    <string name = "niebieski">niebieski</string>
+    <string name = "żółty">żółty</string>
+    <string name = "szary">szary</string>
+    <string name = "zielony">zielony</string>
+    <string name = "czerwony">czerwony</string>
+
 </resources>
