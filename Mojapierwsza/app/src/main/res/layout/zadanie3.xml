@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/pierwszy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:background="@color/niebieski"
+        android:text="@string/niebieski" />
+
+    <TextView
+        android:id="@+id/drugi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pierwszy"
+        android:layout_toRightOf="@id/pierwszy"
+        android:background="@color/czerwony"
+        android:text="@string/czerwony" />
+
+    <TextView
+        android:id="@+id/trzeci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drugi"
+        android:layout_toRightOf="@id/drugi"
+        android:background="@color/żółty"
+        android:text="@string/żółty" />
+
+    <TextView
+        android:id="@+id/czwarty"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trzeci"
+        android:layout_toRightOf="@id/trzeci"
+        android:background="@color/szary"
+
+        android:text="@string/szary" />
+
+    <TextView
+        android:id="@+id/piaty"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/czwarty"
+        android:layout_toRightOf="@id/czwarty"
+        android:background="@color/zielony"
+        android:gravity="center"
+        android:text="@string/zielony" />
+
+    <TextView
+        android:id="@+id/szosty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/szary"
+
+        android:text="@string/szary"
+        android:layout_below="@id/piaty"
+        android:layout_toLeftOf="@id/piaty"/>
+    <TextView
+        android:id="@+id/siodmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/żółty"
+
+        android:text="@string/żółty"
+        android:layout_below="@id/szosty"
+        android:layout_toLeftOf="@id/szosty"/>
+    <TextView
+        android:id="@+id/osmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/czerwony"
+
+        android:text="@string/czerwony"
+        android:layout_below="@id/siodmy"
+        android:layout_toLeftOf="@id/siodmy"/>
+    <TextView
+        android:id="@+id/dziewieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/niebieski"
+
+        android:text="@string/niebieski"
+        android:layout_below="@id/osmy"
+        android:layout_toLeftOf="@id/osmy"/>
+
+
+
+
+</RelativeLayout>
