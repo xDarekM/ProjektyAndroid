@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         for(int i=0;i<lista1.size();i++ ){
-            wyswietlacz.append(lista1.get(i).getTitle() + " "+ lista1.get(i).getLength() + "\n");
+            wyswietlacz.append( "tytuł:" + lista1.get(i).getTitle() + "  " + "dlugość" + " "+ lista1.get(i).getLength() + "\n");
 
         }
 
