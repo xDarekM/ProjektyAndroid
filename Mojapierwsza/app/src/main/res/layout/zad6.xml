@@ -25,6 +25,7 @@
             />
 
         <EditText
+            android:id="@+id/edit1"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/login"
@@ -41,6 +42,7 @@
 
             />
         <EditText
+            android:id="@+id/edit2"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/haslo"
