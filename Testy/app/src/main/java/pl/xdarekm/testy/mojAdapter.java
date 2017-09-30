@@ -31,7 +31,7 @@ public class mojAdapter extends RecyclerView.Adapter <mojviewHolder>{
     @Override
     public mojviewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(kontekst).inflate(R.layout.item_layout,parent,false);
-        return new mojviewHolder(view,kontekst);
+        return new mojviewHolder(view,kontekst,this);
     }
 
     @Override
@@ -45,4 +45,14 @@ public class mojAdapter extends RecyclerView.Adapter <mojviewHolder>{
     public int getItemCount() {
         return albums.size();
     }
+    public void removeAlbum(int pos){
+        albums.remove(pos);
+        notifyItemRemoved(pos);
+    }
+    public void addAlbum(album Album){
+        albums.add(Album);
+        notifyItemInserted(albums.size());
+
+    }
 }
+
