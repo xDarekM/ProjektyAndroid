@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Button
+    android:id="@+id/guzik1"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp"
+    android:background="@color/czerwony"
+    android:text="red"
+    />
+    <Button
+        android:id="@+id/guzik2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/guzik1"
+        android:layout_marginLeft="50dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/niebieski"
+        android:text="Blue"
+        android:gravity="center"/>
+
+        <Button
+            android:id="@+id/guzik3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/guzik2"
+            android:background="@color/zielony"
+            android:layout_marginLeft="50dp"
+            android:text="green"/>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
