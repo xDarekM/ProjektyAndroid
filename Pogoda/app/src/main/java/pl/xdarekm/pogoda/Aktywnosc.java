@@ -99,7 +99,7 @@ public class Aktywnosc extends AppCompatActivity {
         super.onResume();
         SharedPreferences sharedpref = getSharedPreferences("pogoda",Activity.MODE_PRIVATE);
         String wartosc = sharedpref.getString("stopnie", "C");
-        textView.setText(wartosc);
+        textView.setText(wartosc
 
         String wartosc1 = sharedpref.getString("city", "Warszawa");
         textView1.setText(wartosc1);

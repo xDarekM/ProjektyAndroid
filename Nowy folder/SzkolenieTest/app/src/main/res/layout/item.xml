@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--todo 3: stwórz layout do elementu recycler view-->
+
+
+    <ImageView
+        android:id="@+id/zdj1"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignStart="@id/zdj1"
+        android:layout_marginTop="10px"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/zdj1"
+        android:text="Name"/>
+    <TextView
+        android:id="@+id/tex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex1"
+        android:layout_toRightOf="@id/zdj1"
+        android:text="User"/>
+<TextView
+    android:id="@+id/tex3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/tex1"
+
+    android:layout_marginLeft="10px"/>
+    <TextView
+        android:id="@+id/tex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tex2"
+        android:layout_marginLeft="10px"
+        android:layout_below="@id/tex3"
+
+        />
+
+</RelativeLayout>

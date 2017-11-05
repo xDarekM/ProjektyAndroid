@@ -11,6 +11,9 @@ public class Forcast {
     private Double temp;
     private String icon;
 
+    public Forcast(){
+
+    }
 
     public Forcast (String city, String date,String desc, Double temp,String icon){
 

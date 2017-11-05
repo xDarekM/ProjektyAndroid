@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private String unit ="&units=metric";
     private List<Forcast> forcasts = new LinkedList<>();
 
+    Baza_danych db;
+
     private final String Api_Key = "&AppID=69cdbc8b71e1f5b0818fed7c423f6e13";
     final String BASE_URL = "http://api.openweathermap.org/data/2.5/forecast?q=";
     private final int loaderId = 23;
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = new Baza_danych(this);
 
         result = (TextView) findViewById(R.id.result);
         searchEt = (EditText) findViewById(R.id.search_et);
@@ -161,7 +165,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
             }
         } else {
-            Toast.makeText(getApplicationContext(), "Nie masz internetu", Toast.LENGTH_SHORT).show();
+            weatherAdapter adapter = new weatherAdapter(getApplicationContext(), db.getAllRepos());
+            recycler.setAdapter(adapter);
         }
     }
 
@@ -211,6 +216,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         if (data != null && !data.equals("")) {
 
+            db.clearRepos();
+
             forcasts.clear();
             try {
 
@@ -231,6 +238,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     String icon = weatherArr.getJSONObject(0).getString("icon");
                     Forcast f = new Forcast(city, date, desc, temp, icon);
                     forcasts.add(f);
+                    db.addRepo(f);
 
                 }
                 weatherAdapter adapter = new weatherAdapter(getApplicationContext(), forcasts);
